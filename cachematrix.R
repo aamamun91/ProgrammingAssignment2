@@ -1,5 +1,5 @@
-## Computing inverse of an invertible matrix that can cache its inverse
-## The function below creates a special matrix that is invertible
+## Computing inverse of an invertible matrix 
+## The function below creates a special matrix that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
