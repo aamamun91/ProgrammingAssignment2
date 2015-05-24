@@ -1,4 +1,4 @@
-## Computing inverse of an invertible matrix 
+## Computing inverse of an invertible matrix that can cache its inverse
 ## The function below creates a special matrix that is invertible
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
        setinverse = setinverse,
        getinverse = getinverse)
 }
-## The function below computes inverse of a matrix
+## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getinverse()
